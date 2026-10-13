@@ -1,0 +1,38 @@
+{
+  "@context": {
+    "@vocab": "https://automq.com/schema#",
+    "schema": "https://schema.org/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "dcterms": "http://purl.org/dc/terms/",
+    "automq": "https://automq.com/schema#",
+    "ApiCatalog": "automq:ApiCatalog",
+    "linkset": {
+      "@id": "automq:linkset",
+      "@container": "@list"
+    },
+    "Status": "automq:Status",
+    "status": {
+      "@id": "automq:status",
+      "@type": "xsd:string"
+    },
+    "service": {
+      "@id": "automq:service",
+      "@type": "xsd:string"
+    },
+    "updated": {
+      "@id": "automq:updated",
+      "@type": "xsd:date"
+    },
+    "resources": {
+      "@id": "automq:resources",
+      "@container": "@list"
+    }
+  },
+  "@type": "schema:Dataset",
+  "schema:name": "AutoMQ API JSON-LD context",
+  "schema:description": "A JSON-LD @context for the objects AutoMQ's own API contract declares: one class per component schema, one property per declared field, typed from the contract. Derived by script (derive-json-ld.py, 2026-10-13) from openapi/automq-openapi.yml.",
+  "dcterms:created": "2026-10-13",
+  "dcterms:source": [
+    "openapi/automq-openapi.yml"
+  ]
+}

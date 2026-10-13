@@ -1,0 +1,6 @@
+generated: '2026-10-13'
+method: probed
+generator: harvest-llms.py
+source: https://docs.automq.com/llms.txt
+bytes: 18054
+note: saved verbatim; the provider's own document

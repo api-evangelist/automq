@@ -1,23 +1,107 @@
 aid: automq
 name: AutoMQ
-description: 'AutoMQ is a company surfaced via the API Evangelist harvest backlog (source: market-gap:streaming-kafka)
-  and added to the network as a stub for full-pipeline profiling.'
+image: https://www.automq.com/images/automq/og-image.webp
+description: AutoMQ is a cloud-native, Kafka-compatible streaming platform that replaces
+  Kafka broker local disks with shared S3-compatible object storage, offered as open
+  source and as AutoMQ Cloud (BYOC). Developers use the Kafka protocol directly; AutoMQ
+  Cloud resources are managed through an official Terraform provider, and the company
+  publishes a public discovery OpenAPI, llms.txt and a documentation MCP server.
 url: https://raw.githubusercontent.com/api-evangelist/automq/refs/heads/main/apis.yml
 x-type: company
 x-source: harvest:market-gap:streaming-kafka
-x-tier: stub
-x-tier-reason: harvest
+x-tier: profiled
 specificationVersion: '0.20'
 created: '2026-10-13'
 modified: '2026-10-13'
 tags:
 - Company
-apis: []
+- Kafka
+- Streaming
+- Event Streaming
+- Object Storage
+- Open Source
+- Cloud
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: AgenticAccess
+  url: agentic-access/automq-agentic-access.yml
+- type: Spectral
+  url: rules/automq-rules.yml
+- type: JSONLD
+  url: json-ld/automq-context.jsonld
+- type: Vocabulary
+  url: vocabulary/automq-vocabulary.yml
+- type: DataModel
+  url: data-model/automq-data-model.yml
+- type: ChangeLog
+  url: changelog/automq-changelog.yml
+- type: Conformance
+  url: conformance/automq-conformance.yml
+- type: LLMsTxt
+  url: llms/automq-llms.txt
+- type: AgentCard
+  url: a2a/automq-a2a.yml
+- type: MCPServer
+  url: mcp/automq-mcp.yml
+- type: WellKnown
+  url: well-known/automq-well-known.yml
+- type: Hosts
+  url: hosts/automq-hosts.yml
+- type: Vendors
+  url: vendors/automq-vendors.yml
+- type: SDKs
+  url: packages/automq-packages.yml
+- type: Packages
+  url: packages/automq-packages.yml
+- type: GettingStarted
+  url: https://docs.automq.com/automq/getting-started/deploy-multi-nodes-test-cluster-on-docker
+- type: DomainSecurity
+  url: security/automq-domain-security.yml
 - type: Website
   url: https://www.automq.com
+- type: Documentation
+  url: https://docs.automq.com
+- type: Blog
+  url: https://www.automq.com/blog
+- type: GitHubOrganization
+  url: https://github.com/AutoMQ
+- type: Pricing
+  url: https://www.automq.com/pricing
+- type: PrivacyPolicy
+  url: https://www.automq.com/privacy-policy
+- type: TermsOfService
+  url: https://www.automq.com/terms-of-service
+- type: ChangeLog
+  url: https://docs.automq.com/automq/releases/release-notes.md
+- type: TrustCenter
+  url: https://trust.automq.com/
+apis:
+- aid: automq:automq-public-discovery-api
+  name: AutoMQ Public Discovery API
+  description: Machine-readable discovery endpoints for the AutoMQ public website
+    (API catalog linkset, OpenAPI, MCP server card, agent skills index, llms.txt).
+    It does not describe AutoMQ product control-plane APIs.
+  humanURL: https://www.automq.com/.well-known/api-catalog
+  baseURL: https://www.automq.com
+  tags:
+  - Discovery
+  - Well-Known
+  properties:
+  - type: OpenAPI
+    url: openapi/automq-openapi.yml
+  - type: OpenAPI
+    name: OpenAPI (provider-hosted)
+    url: https://www.automq.com/.well-known/openapi.json
+  - type: JSONSchema
+    url: json-schema/automq-status-schema.json
+  - type: JSONSchema
+    url: json-schema/automq-api-catalog-schema.json
+x-enrichment:
+  date: '2026-10-13'
+  status: enriched
+  artifacts_added: 6
+  pass: local-v5

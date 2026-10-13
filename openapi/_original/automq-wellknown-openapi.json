@@ -1,0 +1,234 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "AutoMQ Public Discovery API",
+    "version": "2026-05-07",
+    "description": "Machine-readable discovery endpoints for AutoMQ public website resources. This API does not describe AutoMQ product control-plane APIs, customer data APIs, or private service endpoints."
+  },
+  "servers": [
+    {
+      "url": "https://www.automq.com"
+    }
+  ],
+  "paths": {
+    "/.well-known/api-catalog": {
+      "get": {
+        "operationId": "getApiCatalog",
+        "summary": "Get the AutoMQ API catalog linkset",
+        "responses": {
+          "200": {
+            "description": "RFC 9727 API catalog encoded as an RFC 9264 JSON linkset",
+            "content": {
+              "application/linkset+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ApiCatalog"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/.well-known/openapi.json": {
+      "get": {
+        "operationId": "getPublicDiscoveryOpenApi",
+        "summary": "Get the OpenAPI description for AutoMQ public discovery endpoints",
+        "responses": {
+          "200": {
+            "description": "OpenAPI description",
+            "content": {
+              "application/vnd.oai.openapi+json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/.well-known/api-status": {
+      "get": {
+        "operationId": "getPublicDiscoveryStatus",
+        "summary": "Get status for AutoMQ public discovery endpoints",
+        "responses": {
+          "200": {
+            "description": "Discovery endpoint status",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Status"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/.well-known/oauth-protected-resource": {
+      "get": {
+        "operationId": "getOAuthProtectedResourceMetadata",
+        "summary": "Get OAuth Protected Resource Metadata for the AutoMQ website",
+        "responses": {
+          "200": {
+            "description": "OAuth Protected Resource Metadata",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/.well-known/mcp/server-card.json": {
+      "get": {
+        "operationId": "getMcpServerCard",
+        "summary": "Get the AutoMQ MCP Server Card",
+        "responses": {
+          "200": {
+            "description": "MCP Server Card",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/.well-known/agent-skills/index.json": {
+      "get": {
+        "operationId": "getAgentSkillsIndex",
+        "summary": "Get the AutoMQ Agent Skills discovery index",
+        "responses": {
+          "200": {
+            "description": "Agent Skills discovery index",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/robots.txt": {
+      "get": {
+        "operationId": "getRobotsTxt",
+        "summary": "Get robots.txt with AutoMQ crawl policy, content signals, and sitemap location",
+        "responses": {
+          "200": {
+            "description": "robots.txt",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/llms.txt": {
+      "get": {
+        "operationId": "getLlmsIndex",
+        "summary": "Get the AutoMQ LLM-friendly content index",
+        "responses": {
+          "200": {
+            "description": "LLM index",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/llms-full.txt": {
+      "get": {
+        "operationId": "getLlmsFullContext",
+        "summary": "Get the AutoMQ full LLM-friendly context file",
+        "responses": {
+          "200": {
+            "description": "Full LLM context",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/ai-info": {
+      "get": {
+        "operationId": "getAiInfo",
+        "summary": "Get the AutoMQ AI information page",
+        "responses": {
+          "200": {
+            "description": "AI information HTML page",
+            "content": {
+              "text/html": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "ApiCatalog": {
+        "type": "object",
+        "properties": {
+          "linkset": {
+            "type": "array",
+            "items": {
+              "type": "object"
+            }
+          }
+        },
+        "required": ["linkset"]
+      },
+      "Status": {
+        "type": "object",
+        "properties": {
+          "status": {
+            "type": "string"
+          },
+          "service": {
+            "type": "string"
+          },
+          "updated": {
+            "type": "string",
+            "format": "date"
+          },
+          "resources": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "format": "uri"
+            }
+          }
+        },
+        "required": ["status", "service", "updated", "resources"]
+      }
+    }
+  }
+}

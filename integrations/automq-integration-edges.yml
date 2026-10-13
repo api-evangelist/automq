@@ -1,0 +1,16 @@
+generated: '2026-10-13'
+method: none
+source:
+- https://zapier.com/apps/automq/integrations
+- https://n8n.io/integrations/automq/
+- https://composio.dev/toolkits/automq
+- https://monid.ai/tools/automq
+checked:
+- https://composio.dev/toolkits/automq
+- https://monid.ai/tools/automq
+- https://n8n.io/integrations/automq/
+- https://zapier.com/apps/automq/integrations
+summary: null
+marketplace_apps: []
+edges: []
+templates: []

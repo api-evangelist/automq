@@ -1,0 +1,16 @@
+{
+  "resource": "https://www.automq.com",
+  "resource_name": "AutoMQ Website",
+  "resource_documentation": "https://docs.automq.com",
+  "authorization_servers": [
+    "https://account.automq.cloud"
+  ],
+  "scopes_supported": [
+    "openid",
+    "profile",
+    "email"
+  ],
+  "bearer_methods_supported": [
+    "header"
+  ]
+}

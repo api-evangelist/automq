@@ -1,0 +1,20 @@
+generated: '2026-10-13'
+method: derived
+generator: derive-vocabulary.py
+source: openapi/automq-openapi.yml
+vocabulary:
+  name: AutoMQ Domain Vocabulary
+  description: 'Terms declared by AutoMQ''s own API contract: its resource groups, objects and enumerations, with the contract''s definitions.
+    Derived, not authored.'
+  version: '2026-10-13'
+  terms:
+  - term: ApiCatalog
+    definition: 'Object declared by the contract with fields: linkset.'
+    tags:
+    - Object
+    source: openapi/automq-openapi.yml#/components/schemas/ApiCatalog
+  - term: Status
+    definition: 'Object declared by the contract with fields: status, service, updated, resources.'
+    tags:
+    - Object
+    source: openapi/automq-openapi.yml#/components/schemas/Status

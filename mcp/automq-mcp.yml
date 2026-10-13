@@ -1,0 +1,14 @@
+generated: '2026-10-13'
+method: probed
+source: https://docs.automq.com/mcp
+name: AutoMQ Documentation MCP Server
+description: Remote MCP server serving AutoMQ documentation search (tools/list answered without auth, 2026-10-13). It exposes documentation, not the AutoMQ Cloud control plane. The website also publishes a WebMCP server card at https://www.automq.com/.well-known/mcp/server-card.json.
+deployment:
+  mode: remote
+  endpoint: https://docs.automq.com/mcp
+  auth: none
+  verified: probed
+tools:
+- name: search_auto_mq_documentation
+- name: query_docs_filesystem_auto_mq_documentation
+- name: submit_feedback

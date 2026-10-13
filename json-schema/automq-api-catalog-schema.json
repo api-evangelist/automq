@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/automq/main/json-schema/automq-api-catalog-schema.json",
+  "title": "ApiCatalog",
+  "x-generated": "2026-10-13",
+  "x-method": "derived",
+  "x-generator": "derive-json-schema.py",
+  "x-source": "openapi/automq-openapi.yml#/components/schemas/ApiCatalog",
+  "type": "object",
+  "properties": {
+    "linkset": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    }
+  },
+  "required": [
+    "linkset"
+  ]
+}

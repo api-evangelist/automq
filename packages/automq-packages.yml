@@ -1,0 +1,22 @@
+generated: '2026-10-13'
+method: searched
+source: https://registry.terraform.io/v1/providers/automq/automq
+packages:
+- name: automq/automq
+  registry: terraform
+  url: https://registry.terraform.io/providers/AutoMQ/automq
+  source: https://github.com/AutoMQ/terraform-provider-automq
+  language: hcl
+  official: true
+  version: 0.4.9
+  published: '2026-10-10'
+  note: Terraform provider for AutoMQ Cloud (instances, topics, users, ACLs, connectors, kafka linking); its Go client calls the control-plane REST API under /api/v1, which has no published OpenAPI.
+- name: AutoMQ/automq
+  registry: github-releases
+  url: https://github.com/AutoMQ/automq/releases
+  source: https://github.com/AutoMQ/automq
+  language: java
+  official: true
+  version: 1.7.4
+  published: '2026-08-29'
+  note: Open-source Kafka-compatible broker distribution; 1.7.5-rc1 pre-release published 2026-09-24.

@@ -1,0 +1,150 @@
+# AutoMQ Documentation
+
+- [AutoMQ BYOC (113 pages)](https://docs.automq.com/_llms/en/auto-mq-byoc.txt): Documentation for AutoMQ BYOC.
+
+## Home
+
+- [AutoMQ Documentation](https://docs.automq.com/index.md)
+
+## AutoMQ Open Source
+
+### What is AutoMQ?
+
+- [Overview](https://docs.automq.com/automq/what-is-automq/overview.md): AutoMQ is a cloud-native, fully Kafka-compatible streaming platform built on S3. It reduces storage costs by up to 90% and delivers seconds-level elasticity.
+- [Difference with Apache Kafka](https://docs.automq.com/automq/what-is-automq/difference-with-apache-kafka.md): AutoMQ delivers cloud-native scalability and cost efficiency while ensuring 100% API compatibility with Apache Kafka. Experience up to 10x cost savings and enhanced flexibility.
+- [Difference with Tiered Storage](https://docs.automq.com/automq/what-is-automq/difference-with-tiered-storage.md): AutoMQ offers seamless cloud-native scalability, cost-efficient storage, and Kafka compatibility by leveraging object storage and treating cloud storage as a service, ensuring stateless and rapid partition reassignments.
+- [Compatibility with Apache Kafka](https://docs.automq.com/automq/what-is-automq/compatibility-with-apache-kafka.md): AutoMQ is a cloud-native, Kafka-compatible service offering seamless integration with Apache Kafka. Enjoy scalable, cost-efficient performance while maintaining API compatibility.
+- [Licensing and Enterprise Features](https://docs.automq.com/automq/what-is-automq/licensing-and-enterprise-features.md): AutoMQ offers cloud-native scalability and cost-efficient Kafka compatibility, reducing deployment hassles with its fully managed cloud services and open-source options.
+
+### Getting Started
+
+- [Deploy Multi-Nodes Test Cluster on Docker](https://docs.automq.com/automq/getting-started/deploy-multi-nodes-test-cluster-on-docker.md): Deploy a scalable AutoMQ test cluster on Docker to evaluate cloud-native message streaming with full Kafka compatibility and feature exploration.
+
+#### Explore AutoMQ
+
+- [Example: Partition Reassignment in Seconds](https://docs.automq.com/automq/getting-started/explore-automq/example-partition-reassignment-in-seconds.md): Optimize partition reassignment with AutoMQ's Kafka-compatible service using CLI tools for sub-second performance, leveraging cloud-native scalability and efficiency.
+- [Example: Continuous Data Self-Balancing](https://docs.automq.com/automq/getting-started/explore-automq/example-continuous-data-self-balancing.md): Experience the power of AutoMQ's continuous data rebalance for seamless load distribution and enhanced cloud-native scalability, all while maintaining Kafka compatibility.
+- [Example: Self-Balancing when Cluster Nodes Change](https://docs.automq.com/automq/getting-started/explore-automq/example-self-balancing-when-cluster-nodes-change.md): AutoMQ ensures seamless data distribution with automatic partition reassignment during cluster changes, leveraging cloud-native scalability and Kafka compatibility.
+
+### Deployment
+
+- [Overview](https://docs.automq.com/automq/deployment/overview.md): AutoMQ offers cloud-native scalability and 100% Kafka compatibility on AWS, Azure, GCP, and more. It supports both public and private clouds.
+- [Deploy Multi-Nodes Cluster on Linux](https://docs.automq.com/automq/deployment/deploy-multi-nodes-cluster-on-linux.md): Deploy a scalable, multi-node AutoMQ cluster on Linux with full Kafka compatibility. Benefit from object storage integration and cloud-native performance.
+- [Deploy Multi-Nodes Cluster on Kubernetes](https://docs.automq.com/automq/deployment/deploy-multi-nodes-cluster-on-kubernetes.md): Deploy a scalable, cost-efficient AutoMQ cluster on Kubernetes. Explore Kafka-compatible features and a 30-day free cloud trial. Contact us for guidance.
+- [Deploy Multi-Nodes Cluster on Kubernetes with Strimzi](https://docs.automq.com/automq/deployment/multi-nodes-cluster-with-strimzi.md): Deploy a multi-node AutoMQ cluster on Kubernetes with Strimzi. Covers Kafka-compatible features, scheduling, scaling, and a free 30-day AWS trial.
+- [Introduction and Deployment Recommendations for AutoMQ Open Source Image](https://docs.automq.com/automq/deployment/deployment-recommendations.md): AutoMQ offers cloud-native scalability and Kafka protocol compatibility, enabling flexible deployments in complex environments with Kubernetes lifecycle tools for efficient resource management.
+- [Performance Tuning for Broker](https://docs.automq.com/automq/deployment/performance-tuning-for-broker.md): Optimize AutoMQ's broker performance with memory and network tuning, leveraging cloud-native scalability and Kafka compatibility for efficient resource allocation.
+- [Performance Tuning for Client](https://docs.automq.com/automq/configuration/performance-tuning-for-client.md): Optimize AutoMQ for peak performance with its cloud-native scalability and Kafka compatibility, ensuring cost efficiency and enterprise-grade low-latency support.
+- [AutoMQ Benchmark](https://docs.automq.com/automq/deployment/automq-benchmark.md): Test AutoMQ cluster performance using Kafka CLI tools or the AutoMQ performance testing tool. Covers tail read and catch-up read scenarios.
+
+### Migration
+
+- [Overview](https://docs.automq.com/automq/migration/overview.md): Migrate to AutoMQ, a next-gen Kafka-compatible cloud-native service, with ease. Enjoy seamless cluster migration and cost-efficient scalability using MirrorMaker2.
+- [Migrating from Apache Kafka to AutoMQ](https://docs.automq.com/automq/migration/migrating-from-apache-kafka-to-automq.md): Migrate from Apache Kafka to AutoMQ with cloud-native scalability, full Kafka compatibility, and cost efficiency. Follow detailed steps for seamless transition and minimize disruption.
+
+### Observability
+
+- [Overview](https://docs.automq.com/automq/observability/overview.md): Discover AutoMQ's Kafka compatibility and cloud-native scalability. Elevate monitoring with Grafana dashboards and Prometheus integration for optimized alerts.
+- [Integrating Metrics with Prometheus](https://docs.automq.com/automq/observability/integrating-metrics-with-prometheus.md): Integrate AutoMQ with Prometheus for metrics collection and visualization. Leverage cloud-native scalability, Kafka compatibility, and cost efficiency.
+- [Dashboard Configuration](https://docs.automq.com/automq/observability/dashboard-configuration.md): Monitor and optimize your AutoMQ cloud-native Kafka environment with customizable Grafana dashboards, enhancing scalability and cost-efficiency.
+- [Prometheus Metrics](https://docs.automq.com/automq/observability/prometheus-metrics.md): AutoMQ offers Kafka-compatible metrics with Prometheus format, enhancing cloud-native scalability and cost efficiency. Understand performance deeply with detailed insights.
+
+### Architecture
+
+- [Overview](https://docs.automq.com/automq/architecture/overview.md): AutoMQ's Shared Storage architecture leverages cloud-native advantages to offer 10x cost efficiency and 100x operational gains over Kafka, with streamlined scalability and stateless brokers.
+
+#### S3Stream Shared Streaming Storage
+
+- [Overview](https://docs.automq.com/automq/architecture/s3stream-shared-streaming-storage/overview.md): AutoMQ's S3Stream offloads Kafka's log storage to cloud storage, combining flexible WAL options and S3 for low-latency, high-throughput, cost-effective stream storage with near-infinite capacity.
+- [S3 Storage](https://docs.automq.com/automq/architecture/s3stream-shared-streaming-storage/s3-storage.md): AutoMQ leverages S3 storage for cost-efficient, scalable data storage, ensuring rapid fault recovery with Kafka compatibility. Achieve seamless, real-time traffic balancing and effortless scaling.
+- [WAL Storage](https://docs.automq.com/automq/architecture/s3stream-shared-streaming-storage/wal-storage.md): AutoMQ’s WAL storage offers scalable, low-latency data persistence with Kafka compatibility. Supports EBS, S3 WAL, and innovative multi-WAL solutions for cost efficiency.
+
+#### Technical Advantage
+
+- [Overview](https://docs.automq.com/automq/architecture/technical-advantage/overview.md): AutoMQ offers cloud-native scalability and efficiency with 100% Kafka API compatibility, enabling second-level scaling, seamless partition reassignment, and continuous self-balancing.
+- [5x Catch-up Read Efficiency](https://docs.automq.com/automq/architecture/technical-advantage/5x-catch-up-read-efficiency.md): AutoMQ offers 5x catch-up read efficiency over Apache Kafka with cold and hot data isolation, cloud-native scalability, Kafka compatibility, and better cost efficiency.
+- [Continuous Self-Balancing](https://docs.automq.com/automq/architecture/technical-advantage/continuous-self-balancing.md): AutoMQ offers cloud-native scalability and seamless Kafka compatibility with second-level partition reassignment, ensuring efficient, automatic data self-balancing and optimal traffic distribution.
+- [Native Compatible with Apache Kafka](https://docs.automq.com/automq/architecture/technical-advantage/native-compatible-with-apache-kafka.md): AutoMQ ensures 100% compatibility with Apache Kafka's protocol and semantics, providing cloud-native scalability, cost-efficient storage solutions, and seamless integration.
+- [Partition Reassignment in Seconds](https://docs.automq.com/automq/architecture/technical-advantage/partition-reassignment-in-seconds.md): AutoMQ enables second-level partition reassignments with its shared storage architecture, ensuring real-time scalability, high cost efficiency, and full Kafka compatibility for seamless cloud-native operations.
+- [Scale-out/in in Seconds](https://docs.automq.com/automq/architecture/technical-advantage/scale-outin-in-seconds.md): AutoMQ offers rapid, cloud-native scalability in seconds with seamless Kafka compatibility, reducing resource waste and ensuring cost efficiency with automatic scaling based on business traffic.
+- [Stateless Broker](https://docs.automq.com/automq/architecture/technical-advantage/stateless-broker.md): AutoMQ leverages cloud-native scalability by separating storage and compute, making Broker nodes stateless and reducing costs with Spot instances. Fully Kafka-compatible.
+
+### Table Topic
+
+- [Overview](https://docs.automq.com/automq/table-topic/overview.md): AutoMQ's Table Topic offers seamless Iceberg integration, auto-scaling, and ETL-free data lake ingestion, enhancing real-time analytics with S3 integration. Ideal for AWS.
+- [Table Topic Quick Start](https://docs.automq.com/automq/table-topic/table-topic-quick-start.md): Discover seamless data integration with AutoMQ's Table Topic, enhancing data lakes through cloud-native scalability and Kafka compatibility. Perfect for swift trials.
+- [Table Topic Configuration](https://docs.automq.com/automq/table-topic/table-topic-configuration.md): Optimize your Kafka data management with AutoMQ's Table Topic feature. Enjoy seamless Kafka compatibility, cloud-native scalability, and cost-efficient Iceberg integration.
+
+### Eliminate Inter-Zone Traffics
+
+- [Overview](https://docs.automq.com/automq/eliminate-inter-zone-traffics/overview.md): AutoMQ reduces Inter-Zone costs with S3-based storage, eliminating Kafka's data transfer traffic across zones while ensuring scalability and cost efficiency.
+- [Broker Configuration](https://docs.automq.com/automq/eliminate-inter-zone-traffics/broker-configuration.md): Optimize AutoMQ's inter-zone routing and rack configurations to minimize costs and enhance performance. Benefit from cloud-native scalability and 100% Kafka compatibility.
+- [Client Configuration](https://docs.automq.com/automq/eliminate-inter-zone-traffics/client-configuration.md): Optimize cloud-native data flow with AutoMQ using zone identification for seamless Kafka-compatible scalability and efficient data fetching based on client zone ID.
+- [Monitor Inter Zone Traffic](https://docs.automq.com/automq/eliminate-inter-zone-traffics/monitor-inter-zone-traffic.md): Monitor AutoMQ's inter-zone traffic with tools like iftop on Linux and AWS CloudWatch, optimizing transfers in a scalable, Kafka-compatible cloud service.
+
+### Integrations
+
+#### Data Analysis
+
+- [Apache Doris](https://docs.automq.com/automq/integrations/data-analysis/apache-doris.md): AutoMQ ensures cloud-native scalability, Kafka compatibility, and cost efficiency for importing data from AutoMQ into Apache Doris, driving fast, real-time analytics.
+- [Databend](https://docs.automq.com/automq/integrations/data-analysis/databend.md): AutoMQ integrates with Databend, enabling cloud-native scalability and Kafka compatibility for efficient big data analytics. Learn how to ingest data from AutoMQ to Databend.
+- [Flink](https://docs.automq.com/automq/integrations/data-analysis/flink.md): Integrate Flink with AutoMQ for real-time data stream analysis with Flink and AutoMQ. Enjoy 100% Kafka compatibility, cloud-native scalability, and over 10x cost savings.
+- [RisingWave](https://docs.automq.com/automq/integrations/data-analysis/risingwave.md): Import data from AutoMQ into RisingWave’s SQL-compatible streaming database. Experience cloud-native scalability, complete Kafka compatibility, and cost efficiency.
+- [StarRocks](https://docs.automq.com/automq/integrations/data-analysis/starrocks.md): AutoMQ enables real-time data import to StarRocks, leveraging Kafka compatibility for integration and cloud-native scalability. Achieve efficient, high-concurrency analysis.
+
+#### Data Integration
+
+- [Airbyte](https://docs.automq.com/automq/integrations/data-integration/airbyte.md): AutoMQ, a cloud-native Kafka-compatible service, delivers cost-efficient, scalable data flow with Airbyte integration for optimal analytics.
+- [Debezium](https://docs.automq.com/automq/integrations/data-integration/debezium.md): AutoMQ ensures Kafka compatibility with cloud-native scalability for real-time data processing, enhancing system efficiency and reducing costs through shared storage.
+
+#### Kafka UI
+
+- [Kafdrop](https://docs.automq.com/automq/integrations/kafka-ui/kafdrop.md): Enable real-time Kafka cluster monitoring with Kafdrop and AutoMQ's integration, scalability, and cost efficiency. Learn to set up and manage your clusters efficiently.
+- [Redpanda Console](https://docs.automq.com/automq/integrations/kafka-ui/redpanda-console.md): AutoMQ offers cloud-native scalability and Kafka compatibility for cluster management. Integrate with Redpanda Console for real-time monitoring and efficient data handling.
+
+#### Observability
+
+- [Flashcat](https://docs.automq.com/automq/integrations/observability/flashcat.md): AutoMQ offers cloud-native scalability, Kafka compatibility, and cost efficiency by integrating with Nightingale for robust, real-time monitoring and performance optimization.
+- [Guance Cloud](https://docs.automq.com/automq/integrations/observability/guance-cloud.md): AutoMQ offers Kafka compatibility, cloud-native scalability, and cost efficiency, enabling automatic fault recovery and high availability without human intervention.
+- [Prometheus/VictoriaMetrics](https://docs.automq.com/automq/integrations/observability/prometheus.md): Optimize AutoMQ clusters with Prometheus and VictoriaMetrics for cloud-native scalability, Kafka compatibility, and reduced storage costs.
+
+#### Storage
+
+- [RustFS](https://docs.automq.com/automq/integrations/storage/rustfs.md): AutoMQ partners with RustFS to provide a scalable, cost-efficient Kafka-compatible cloud service. Leverage cloud-native benefits with superior performance and licensing ease.
+- [Tigris](https://docs.automq.com/automq/integrations/storage/tigris.md): Deploy AutoMQ statelessly with Tigris. Achieve Kafka compatibility, cloud-native scalability, and cost efficiency with S3 integration for global storage.
+
+### Configuration
+
+- [Broker and Controller Configuration](https://docs.automq.com/automq/configuration/broker-and-controller-configuration.md): Optimize AutoMQ deployment with advanced broker and controller configurations, leveraging cloud-native scalability and Kafka compatibility to reduce costs.
+- [Object Storage Configuration](https://docs.automq.com/automq/configuration/object-storage-configuration.md): Optimize your data storage with AutoMQ, the cloud-native Kafka-compatible solution utilizing leading cloud object storage for superior cost efficiency and scalability.
+
+### Releases
+
+- [Software Artifact](https://docs.automq.com/automq/releases/software-artifact.md): AutoMQ delivers cloud-native Kafka compatibility with full scalability, cost efficiency, and Java support. Deploy on Linux for optimal performance.
+- [Release notes](https://docs.automq.com/automq/releases/release-notes.md)
+
+### Benchmarks
+
+- [AutoMQ vs. Apache Kafka Benchmarks and Cost](https://docs.automq.com/automq/benchmarks/automq-vs-apache-kafka-benchmarks-and-cost.md): AutoMQ offers cloud-native scalability with complete Kafka API compatibility, achieving up to 14x cost efficiency compared to Apache Kafka, maintaining a 1GiB/s throughput.
+
+### Reference
+
+- [Glossary](https://docs.automq.com/automq/reference/glossary.md): AutoMQ offers cloud-native scalability, Kafka compatibility, and cost efficiency with unique modules like S3Stream and WAL. Explore our glossary for detailed insights.
+
+## Optional
+
+- [Github](https://github.com/automq/automq)
+- [Slack](https://go.automq.com/slack)
+- [Telegram](https://t.me/+VgqhN9wqBGIzYmU1)
+- [Blog](https://www.automq.com/blog)
+
+> The links below point to documentation indexes. Follow each `/_llms/` index recursively until you reach documentation pages.
+
+## Indexes
+
+- [English / AutoMQ BYOC (113 pages)](https://docs.automq.com/_llms/en/auto-mq-byoc.txt): Documentation for English / AutoMQ BYOC.
+- [Chinese (181 pages)](https://docs.automq.com/_llms/cn.txt): Documentation for Chinese.
+- [Chinese / AutoMQ BYOC (124 pages)](https://docs.automq.com/_llms/cn/auto-mq-byoc.txt): Documentation for Chinese / AutoMQ BYOC.
+
+
+This documentation is built and hosted on [Mintlify](https://mintlify.com), a developer documentation platform.

@@ -1,0 +1,45 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/v1/server-card.schema.json",
+  "name": "com.automq/site",
+  "title": "AutoMQ Website",
+  "version": "0.1.0",
+  "description": "Discovery metadata for AutoMQ website tools exposed to browser-based AI agents through WebMCP.",
+  "websiteUrl": "https://www.automq.com",
+  "serverInfo": {
+    "name": "AutoMQ Website",
+    "version": "0.1.0"
+  },
+  "transport": {
+    "type": "webmcp",
+    "endpoint": "https://www.automq.com/",
+    "description": "Open the AutoMQ website in a WebMCP-capable browser. The site registers tools on page load with navigator.modelContext.registerTool()."
+  },
+  "capabilities": {
+    "tools": {
+      "listChanged": false
+    },
+    "resources": {
+      "listChanged": false
+    },
+    "prompts": {
+      "listChanged": false
+    }
+  },
+  "tools": [
+    {
+      "name": "automq.search_site",
+      "description": "Search curated AutoMQ website pages and return matching links.",
+      "readOnlyHint": true
+    },
+    {
+      "name": "automq.get_site_links",
+      "description": "Return official AutoMQ product, documentation, pricing, demo, and contact links.",
+      "readOnlyHint": true
+    },
+    {
+      "name": "automq.open_page",
+      "description": "Navigate the browser to an allow-listed AutoMQ website page.",
+      "readOnlyHint": false
+    }
+  ]
+}

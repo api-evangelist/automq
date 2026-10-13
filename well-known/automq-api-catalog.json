@@ -1,0 +1,45 @@
+{
+  "linkset": [
+    {
+      "anchor": "https://www.automq.com/.well-known/",
+      "service-desc": [
+        {
+          "href": "https://www.automq.com/.well-known/openapi.json",
+          "type": "application/vnd.oai.openapi+json",
+          "title": "AutoMQ public discovery OpenAPI description"
+        }
+      ],
+      "service-doc": [
+        {
+          "href": "https://docs.automq.com/",
+          "type": "text/html",
+          "title": "AutoMQ documentation"
+        },
+        {
+          "href": "https://www.automq.com/ai-info",
+          "type": "text/html",
+          "title": "AutoMQ AI information"
+        }
+      ],
+      "status": [
+        {
+          "href": "https://www.automq.com/.well-known/api-status",
+          "type": "application/json",
+          "title": "AutoMQ public discovery status"
+        }
+      ],
+      "describedby": [
+        {
+          "href": "https://www.automq.com/llms.txt",
+          "type": "text/plain",
+          "title": "AutoMQ LLMs index"
+        },
+        {
+          "href": "https://www.automq.com/llms-full.txt",
+          "type": "text/plain",
+          "title": "AutoMQ full LLM context"
+        }
+      ]
+    }
+  ]
+}
