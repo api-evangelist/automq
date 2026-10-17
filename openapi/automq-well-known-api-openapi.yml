@@ -1,12 +1,12 @@
-openapi: 3.1.0
+openapi: 3.2.0
 info:
-  title: AutoMQ Public Discovery API
+  title: Automq .well Known API
   version: '2026-05-07'
-  description: Machine-readable discovery endpoints for AutoMQ public website resources.
-    This API does not describe AutoMQ product control-plane APIs, customer data APIs,
-    or private service endpoints.
+  description: 'Operations tagged .well Known across 2 of this provider''s published API definitions: automq-wellknown-openapi.json, automq-openapi.yml. Each path carries the servers of the definition it was published in.'
 servers:
 - url: https://www.automq.com
+tags:
+- name: .well Known
 paths:
   /.well-known/api-catalog:
     get:
@@ -19,6 +19,10 @@ paths:
             application/linkset+json:
               schema:
                 $ref: '#/components/schemas/ApiCatalog'
+      tags:
+      - .well Known
+    servers:
+    - url: https://www.automq.com
   /.well-known/openapi.json:
     get:
       operationId: getPublicDiscoveryOpenApi
@@ -30,6 +34,10 @@ paths:
             application/vnd.oai.openapi+json:
               schema:
                 type: object
+      tags:
+      - .well Known
+    servers:
+    - url: https://www.automq.com
   /.well-known/api-status:
     get:
       operationId: getPublicDiscoveryStatus
@@ -41,6 +49,10 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/Status'
+      tags:
+      - .well Known
+    servers:
+    - url: https://www.automq.com
   /.well-known/oauth-protected-resource:
     get:
       operationId: getOAuthProtectedResourceMetadata
@@ -52,6 +64,10 @@ paths:
             application/json:
               schema:
                 type: object
+      tags:
+      - .well Known
+    servers:
+    - url: https://www.automq.com
   /.well-known/mcp/server-card.json:
     get:
       operationId: getMcpServerCard
@@ -63,6 +79,10 @@ paths:
             application/json:
               schema:
                 type: object
+      tags:
+      - .well Known
+    servers:
+    - url: https://www.automq.com
   /.well-known/agent-skills/index.json:
     get:
       operationId: getAgentSkillsIndex
@@ -74,62 +94,12 @@ paths:
             application/json:
               schema:
                 type: object
-  /robots.txt:
-    get:
-      operationId: getRobotsTxt
-      summary: Get robots.txt with AutoMQ crawl policy, content signals, and sitemap
-        location
-      responses:
-        '200':
-          description: robots.txt
-          content:
-            text/plain:
-              schema:
-                type: string
-  /llms.txt:
-    get:
-      operationId: getLlmsIndex
-      summary: Get the AutoMQ LLM-friendly content index
-      responses:
-        '200':
-          description: LLM index
-          content:
-            text/plain:
-              schema:
-                type: string
-  /llms-full.txt:
-    get:
-      operationId: getLlmsFullContext
-      summary: Get the AutoMQ full LLM-friendly context file
-      responses:
-        '200':
-          description: Full LLM context
-          content:
-            text/plain:
-              schema:
-                type: string
-  /ai-info:
-    get:
-      operationId: getAiInfo
-      summary: Get the AutoMQ AI information page
-      responses:
-        '200':
-          description: AI information HTML page
-          content:
-            text/html:
-              schema:
-                type: string
+      tags:
+      - .well Known
+    servers:
+    - url: https://www.automq.com
 components:
   schemas:
-    ApiCatalog:
-      type: object
-      properties:
-        linkset:
-          type: array
-          items:
-            type: object
-      required:
-      - linkset
     Status:
       type: object
       properties:
@@ -150,3 +120,15 @@ components:
       - service
       - updated
       - resources
+    ApiCatalog:
+      type: object
+      properties:
+        linkset:
+          type: array
+          items:
+            type: object
+      required:
+      - linkset
+x-refined-from:
+- automq-wellknown-openapi.json
+- automq-openapi.yml

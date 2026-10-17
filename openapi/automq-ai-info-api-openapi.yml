@@ -1,0 +1,28 @@
+openapi: 3.2.0
+info:
+  title: Automq Ai Info API
+  version: '2026-05-07'
+  description: 'Operations tagged Ai Info across 2 of this provider''s published API definitions: automq-wellknown-openapi.json, automq-openapi.yml. Each path carries the servers of the definition it was published in.'
+servers:
+- url: https://www.automq.com
+tags:
+- name: Ai Info
+paths:
+  /ai-info:
+    get:
+      operationId: getAiInfo
+      summary: Get the AutoMQ AI information page
+      responses:
+        '200':
+          description: AI information HTML page
+          content:
+            text/html:
+              schema:
+                type: string
+      tags:
+      - Ai Info
+    servers:
+    - url: https://www.automq.com
+x-refined-from:
+- automq-wellknown-openapi.json
+- automq-openapi.yml

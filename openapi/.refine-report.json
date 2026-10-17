@@ -1,0 +1,61 @@
+{
+  "provider": "automq",
+  "sources": [
+    "_original/automq-wellknown-openapi.json",
+    "automq-openapi.yml"
+  ],
+  "outputs": [
+    "automq-well-known-api-openapi.yml",
+    "automq-ai-info-api-openapi.yml",
+    "automq-llms-full-txt-api-openapi.yml",
+    "automq-llms-txt-api-openapi.yml",
+    "automq-robots-txt-api-openapi.yml"
+  ],
+  "archived": [
+    "archived openapi/automq-openapi.yml"
+  ],
+  "errors": [],
+  "warnings": [],
+  "notes": [
+    "sourced from openapi/_original/ (1 archived document(s)); previously refined output at the top level was skipped rather than re-split",
+    "automq-wellknown-openapi.json: upgraded openapi 3.1.0 -> OpenAPI 3.2.0",
+    "automq-wellknown-openapi.json: tagged paths GET /.well-known/api-catalog -> .well Known",
+    "automq-wellknown-openapi.json: tagged paths GET /.well-known/openapi.json -> .well Known",
+    "automq-wellknown-openapi.json: tagged paths GET /.well-known/api-status -> .well Known",
+    "automq-wellknown-openapi.json: tagged paths GET /.well-known/oauth-protected-resource -> .well Known",
+    "automq-wellknown-openapi.json: tagged paths GET /.well-known/mcp/server-card.json -> .well Known",
+    "automq-wellknown-openapi.json: tagged paths GET /.well-known/agent-skills/index.json -> .well Known",
+    "automq-wellknown-openapi.json: tagged paths GET /robots.txt -> Robots.txt",
+    "automq-wellknown-openapi.json: tagged paths GET /llms.txt -> Llms.txt",
+    "automq-wellknown-openapi.json: tagged paths GET /llms-full.txt -> Llms Full.txt",
+    "automq-wellknown-openapi.json: tagged paths GET /ai-info -> Ai Info",
+    "automq-wellknown-openapi.json: declared missing tag: .well Known",
+    "automq-wellknown-openapi.json: declared missing tag: Ai Info",
+    "automq-wellknown-openapi.json: declared missing tag: Llms Full.txt",
+    "automq-wellknown-openapi.json: declared missing tag: Llms.txt",
+    "automq-wellknown-openapi.json: declared missing tag: Robots.txt",
+    "automq-openapi.yml: upgraded openapi 3.1.0 -> OpenAPI 3.2.0",
+    "automq-openapi.yml: tagged paths GET /.well-known/api-catalog -> .well Known",
+    "automq-openapi.yml: tagged paths GET /.well-known/openapi.json -> .well Known",
+    "automq-openapi.yml: tagged paths GET /.well-known/api-status -> .well Known",
+    "automq-openapi.yml: tagged paths GET /.well-known/oauth-protected-resource -> .well Known",
+    "automq-openapi.yml: tagged paths GET /.well-known/mcp/server-card.json -> .well Known",
+    "automq-openapi.yml: tagged paths GET /.well-known/agent-skills/index.json -> .well Known",
+    "automq-openapi.yml: tagged paths GET /robots.txt -> Robots.txt",
+    "automq-openapi.yml: tagged paths GET /llms.txt -> Llms.txt",
+    "automq-openapi.yml: tagged paths GET /llms-full.txt -> Llms Full.txt",
+    "automq-openapi.yml: tagged paths GET /ai-info -> Ai Info",
+    "automq-openapi.yml: declared missing tag: .well Known",
+    "automq-openapi.yml: declared missing tag: Ai Info",
+    "automq-openapi.yml: declared missing tag: Llms Full.txt",
+    "automq-openapi.yml: declared missing tag: Llms.txt",
+    "automq-openapi.yml: declared missing tag: Robots.txt",
+    "tag '.well Known' spans 2 source specs (automq-wellknown-openapi.json, automq-openapi.yml): per-path servers applied",
+    "tag 'Ai Info' spans 2 source specs (automq-wellknown-openapi.json, automq-openapi.yml): per-path servers applied",
+    "tag 'Llms Full.txt' spans 2 source specs (automq-wellknown-openapi.json, automq-openapi.yml): per-path servers applied",
+    "tag 'Llms.txt' spans 2 source specs (automq-wellknown-openapi.json, automq-openapi.yml): per-path servers applied",
+    "tag 'Robots.txt' spans 2 source specs (automq-wellknown-openapi.json, automq-openapi.yml): per-path servers applied",
+    "apis.yml register: written (+5 apis, 5 total)"
+  ],
+  "skipped": []
+}

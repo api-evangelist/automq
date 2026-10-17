@@ -80,22 +80,67 @@ common:
 - type: TrustCenter
   url: https://trust.automq.com/
 apis:
-- aid: automq:automq-public-discovery-api
-  name: AutoMQ Public Discovery API
-  description: Machine-readable discovery endpoints for the AutoMQ public website
-    (API catalog linkset, OpenAPI, MCP server card, agent skills index, llms.txt).
-    It does not describe AutoMQ product control-plane APIs.
+- aid: automq:automq-ai-info-api
+  name: AutoMQ Ai Info API
+  description: The Ai Info API from AutoMQ — 1 operation(s) for ai info.
   humanURL: https://www.automq.com/.well-known/api-catalog
-  baseURL: https://www.automq.com
   tags:
-  - Discovery
-  - Well-Known
+  - Ai Info
   properties:
   - type: OpenAPI
-    url: openapi/automq-openapi.yml
+    url: openapi/automq-ai-info-api-openapi.yml
+  - type: JSONSchema
+    url: json-schema/automq-status-schema.json
+  - type: JSONSchema
+    url: json-schema/automq-api-catalog-schema.json
+- aid: automq:automq-llms-full-txt-api
+  name: AutoMQ Llms Full.txt API
+  description: The Llms Full.txt API from AutoMQ — 1 operation(s) for llms full.txt.
+  humanURL: https://www.automq.com/.well-known/api-catalog
+  tags:
+  - Llms Full.txt
+  properties:
   - type: OpenAPI
-    name: OpenAPI (provider-hosted)
-    url: https://www.automq.com/.well-known/openapi.json
+    url: openapi/automq-llms-full-txt-api-openapi.yml
+  - type: JSONSchema
+    url: json-schema/automq-status-schema.json
+  - type: JSONSchema
+    url: json-schema/automq-api-catalog-schema.json
+- aid: automq:automq-llms-txt-api
+  name: AutoMQ Llms.txt API
+  description: The Llms.txt API from AutoMQ — 1 operation(s) for llms.txt.
+  humanURL: https://www.automq.com/.well-known/api-catalog
+  tags:
+  - Llms.txt
+  properties:
+  - type: OpenAPI
+    url: openapi/automq-llms-txt-api-openapi.yml
+  - type: JSONSchema
+    url: json-schema/automq-status-schema.json
+  - type: JSONSchema
+    url: json-schema/automq-api-catalog-schema.json
+- aid: automq:automq-robots-txt-api
+  name: AutoMQ Robots.txt API
+  description: The Robots.txt API from AutoMQ — 1 operation(s) for robots.txt.
+  humanURL: https://www.automq.com/.well-known/api-catalog
+  tags:
+  - Robots.txt
+  properties:
+  - type: OpenAPI
+    url: openapi/automq-robots-txt-api-openapi.yml
+  - type: JSONSchema
+    url: json-schema/automq-status-schema.json
+  - type: JSONSchema
+    url: json-schema/automq-api-catalog-schema.json
+- aid: automq:automq-well-known-api
+  name: AutoMQ .well Known API
+  description: The .well Known API from AutoMQ — 6 operation(s) for .well known.
+  humanURL: https://www.automq.com/.well-known/api-catalog
+  tags:
+  - .well Known
+  properties:
+  - type: OpenAPI
+    url: openapi/automq-well-known-api-openapi.yml
   - type: JSONSchema
     url: json-schema/automq-status-schema.json
   - type: JSONSchema
