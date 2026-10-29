@@ -64,5 +64,129 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-AutoMQ is a company surfaced via the API Evangelist harvest backlog (source: market-gap:streaming-kafka) and added to the network as a stub for full-pipeline profiling.
-- https://www.automq.com
+AutoMQ is a cloud-native, Kafka-compatible streaming platform that replaces Kafka broker local disks with shared S3-compatible object storage, offered as open source and as AutoMQ Cloud (BYOC). Developers use the Kafka protocol directly; AutoMQ Cloud resources are managed through an official Terraform provider, and the company publishes a public discovery OpenAPI, llms.txt and a documentation MCP server.
+
+**Areas:** Company · Kafka · Streaming · Event Streaming · Object Storage · Open Source · Cloud
+
+## AutoMQ on APIs.io
+
+Everything profiled for AutoMQ is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/automq/](https://apis.io/providers/automq/)** — or go straight to one of the APIs or properties below.
+
+### APIs (5)
+
+- [AutoMQ Ai Info API](https://apis.io/apis/automq/automq-ai-info-api/) — The Ai Info API from AutoMQ — 1 operation(s) for ai info.
+- [AutoMQ Llms Full.txt API](https://apis.io/apis/automq/automq-llms-full-txt-api/) — The Llms Full.txt API from AutoMQ — 1 operation(s) for llms full.txt.
+- [AutoMQ Llms.txt API](https://apis.io/apis/automq/automq-llms-txt-api/) — The Llms.txt API from AutoMQ — 1 operation(s) for llms.txt.
+- [AutoMQ Robots.txt API](https://apis.io/apis/automq/automq-robots-txt-api/) — The Robots.txt API from AutoMQ — 1 operation(s) for robots.txt.
+- [AutoMQ .well Known API](https://apis.io/apis/automq/automq-well-known-api/) — The .well Known API from AutoMQ — 6 operation(s) for .well known.
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### MCP servers (1)
+
+Model Context Protocol servers that expose the API to agents.
+
+- [AutoMQ Documentation MCP Server](https://apis.io/servers/automq/automq-documentation-mcp-server/)
+
+#### Agentic access (1)
+
+Which operations an agent can call, which act, and which need a human in the loop.
+
+- [Automq Agentic Access](https://apis.io/agentic-access/automq/automq-agentic-access/)
+
+#### JSON Schema (2)
+
+The data models the API reads and writes.
+
+- [ApiCatalog](https://apis.io/schemas/automq/automq-api-catalog/)
+- [Status](https://apis.io/schemas/automq/automq-status/)
+
+#### JSON-LD (1)
+
+Linked-data contexts for the provider's vocabulary.
+
+- [Automq Context](https://apis.io/jsonld/automq/automq-context/)
+
+#### Governance rules (1)
+
+Spectral rulesets for the provider's contracts.
+
+- [AutoMQ API Rules](https://apis.io/rules/automq/automq-rules/)
+
+#### Security (1)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Automq Domain Security](https://apis.io/security/automq/automq-domain-security/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://www.automq.com)
+- [Documentation](https://docs.automq.com)
+- [Getting started](https://docs.automq.com/automq/getting-started/deploy-multi-nodes-test-cluster-on-docker)
+- [Pricing](https://www.automq.com/pricing)
+- [Changelog](https://docs.automq.com/automq/releases/release-notes.md)
+- [Blog](https://www.automq.com/blog)
+- [Trust centre](https://trust.automq.com/)
+- [Terms of service](https://www.automq.com/terms-of-service)
+- [Privacy policy](https://www.automq.com/privacy-policy)
+- [GitHub](https://github.com/AutoMQ)
+
+## API Evangelist rating
+
+**Kin Score 40.3** — developing · rubric 0.25.0 · scored 2026-10-23
+
+| Facet | Score |
+|---|---|
+| Discoverability | 66.7 |
+| Contract quality | 48.1 |
+| Contract governance | 22.0 |
+| Operational transparency | 21.1 |
+| Developer ergonomics | 31.0 |
+| Access clarity | 39.5 |
+
+**Agent readiness 47.4** — agent-ready (gated down from agent-native)
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | yes |
+| Agentic Access | derived (partial credit) |
+| Reversibility Documented | na |
+| MCP Server | documented (partial credit) |
+| Auth Clarity | served (partial credit) |
+| Idempotency | na |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | yes |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | na |
+| Delegated Identity | served (partial credit) |
+| Protected Resource Metadata | verified |
+| Dynamic Client Registration | yes |
+| Agentic Commerce | — |
+| Pagination Ratio | na |
+| Operation Distinctiveness | distinct |
+
+**Regulatory alignment 29.4** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/automq/](https://apis.io/providers/automq/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for AutoMQ: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/automq/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
